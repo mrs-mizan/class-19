@@ -1,0 +1,348 @@
+.logo{}
+.header-logo img {
+	width: 170px;
+	margin-top: 10px;
+}
+.header-section{
+	background-color: #1f201f;
+    opacity: 999;
+}
+.header-menu ul{}
+.header-menu ul li{
+    display: inline-block;
+}
+ .header-menu ul li:hover>a{
+    color: #c69453;
+}
+.header-menu ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 10px 8px;
+	display: inline-block;
+}
+.header-menu ul li{
+    position: relative;
+    z-index: 999;
+}
+.header-menu ul li::before{
+    content: "";
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 100%;
+    position: absolute;
+	border-bottom: 1px  solid red;
+	transition: .5s;
+    
+}
+.header-menu ul li:hover::before{
+    width: 100%;
+    left: 0;
+    right: 0;
+    
+}
+
+.header-menu ul li ul {
+	position: absolute;
+	width: 300px;
+	top: 47px;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	opacity: 0;
+	transition: .5s;
+	transform: scaleY(0);
+	transform-origin: center center;
+	color: black !important;
+}
+.header-menu ul li:hover ul{
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: -34px;
+}
+.header-menu ul li ul li {
+	display: block;
+	text-decoration: none;
+	padding: 10px 30px;
+	transition: .5s;
+}
+.header-menu ul li ul li a{
+	color: black;
+}
+.header-menu ul li ul li a:hover{
+	text-decoration: none;
+}
+.header-menu ul li ul li:hover{
+    background-color: rgba(0, 0, 0, 0.212);
+    color: #c69453;
+    display: block;
+}
+/* slider-section */
+/* slider-section */
+.slider-section{
+    background: url(./img/ia_200000019.jpg) no-repeat center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.658);
+    z-index: -1;
+    border-top: 1px solid rgba(0, 0, 0, 0.658);
+}
+.slider-text{}
+.slider-text h1 {
+	font-size: 65px;
+	font-weight: 800;
+	margin-bottom: 25px;
+}
+.slider-text h2 {
+	font-weight: 600;
+	margin-bottom: 25px;
+	position: relative;
+}
+.slider-text h2::before {
+	top: 22px;
+	left: 159px;
+	position: absolute;
+	width: 12%;
+	height: 100%;
+	border-top: 2px solid white;
+	content: "";
+}
+.slider-text h2::after {
+	top: 22px;
+	right: 159px;
+	position: absolute;
+	width: 12%;
+	height: 100%;
+	border-top: 2px solid white;
+	content: "";
+}
+
+.slider-text a{}
+.btnn {
+	color: white;
+	background-color: #c69453;
+	text-decoration: none;
+	padding: 10px 25px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 12px;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.btnn:hover{
+    background-color: white;
+    color: #c69453;
+    border: 1px solid #c69453;
+    box-shadow: 1px 1px 10px 0 rgba(98, 120, 223, .5);
+}
+
+/* long-section */
+/* long-section */
+.long-section{
+    padding: 100px 0;
+	background-color: #f8f8f8;
+}
+.profession-item {
+	box-shadow: 3px 4px 5px 0 rgba(98, 120,223, .4);
+	border-color: white;
+	padding: 40px 12px;
+    position: relative;
+    z-index: 1;
+    
+}
+.profession-item::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: .4s;
+    
+}
+.profession-item:hover::before{
+    background-color: rgba(0, 0, 0, 0.137);
+    z-index: -1;
+
+}
+.p-item-pic{}
+.p-item-text{}
+.p-item-text h3 {
+	font-size: 20px;
+}
+.p-item-text p {
+	color: #666;
+}
+.p-item-text a{}
+
+.hello{
+
+}
+.p-item-pic {
+	transform: rotateY(0);
+	transition: 1.4s;
+}
+.profession-item:hover .p-item-pic{
+	transform: rotateY(360deg);
+}
+
+.btnnn{
+	color: white;
+	background-color: #c69453;
+	text-decoration: none;
+	padding: 10px 25px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 20px;
+	font-size: 12px;
+    transition: .5s;
+    border: 1px solid transparent;
+    transform: translateY(0);
+}
+
+.profession-item:hover .btnnn{
+    background-color: white;
+    color: #c69453;
+    border: 1px solid #c69453;
+    box-shadow: 1px 1px 10px 0 rgba(98, 120, 223, .5);
+   
+}
+.btnnn:hover{
+    background-color: black !important;
+    color: whitesmoke !important;
+    transform: translateY(10px);
+   
+}
+
+.wood-text {
+	margin-left: 16px;
+}
+.wood-text h1 {
+	font-weight: 600;
+	text-transform: capitalize;
+	margin-bottom: 17px;
+}
+.wood-text h1 span {
+	color: #c69452;
+}
+.wood-text h1 span img{}
+.wood-text p {
+	margin-top: 30px;
+}
+.wood-text details {
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+.wood-text .btnnnn{
+   color: white;
+	background-color: black;
+	text-decoration: none;
+	padding: 10px 25px;
+	margin-top: 10px;
+	display: inline-block;
+	font-size: 12px;
+    transition: .5s;
+    border: 1px solid transparent;
+}
+.btnnnn:hover{
+    background-color: #c69453;
+    color: white;
+}
+
+/* get-sectio */
+/* get-sectio */
+.get-left{}
+.get-left h1 {
+	font-weight: 700;
+	font-size: 27px;
+}
+.get-left p {
+	font-size: 14px;
+	color: #444;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.get-left form{}
+.get-left form input{
+
+}
+input{}
+form input {
+	width: 100%;
+	border: none;
+	margin-top: 9px;
+	padding: 15px 20px;
+}
+input{
+    background-color: white;
+    box-shadow: 3px 4px 10px 0 rgba(98, 120, 223, .2);
+}
+form textarea {
+	resize: vertical;
+	padding: 10px 10px;
+	margin-top: 12px;
+	margin-bottom: 13px;
+}
+.hii {
+	background-color: #c69453;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	margin-top: 15px;
+}
+
+.get-section{
+	background: url(./ia_200000022.jpg) no-repeat center;
+	background-size: cover;
+	padding: 50px 0;
+}
+
+/* footer-section */
+.footer-section{
+    background-color: #6d6d6d;
+}
+.footer-left{}
+.footer-left h2 {
+	font-size: 15px;
+	text-align: center;
+	line-height: 47px;
+	padding: 15px 0;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.644);
+}
+.footer-right{}
+.footer-right ul {
+	text-align: center;
+}
+.footer-right ul li {
+	display: inline-block;
+}
+.footer-right ul li a {
+	color: white;
+	display: inline-block;
+	font-size: 15px;
+	padding: 15px 10px;
+	line-height: 56px;
+	
+}
+dl, ol, ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
